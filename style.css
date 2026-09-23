@@ -1,0 +1,160 @@
+/**
+ * Allgemeines Seitenlayout
+ */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header, main, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    padding: 1em;
+}
+
+@media (min-width: 70rem) {
+    .container {
+        width: 70rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+/**
+ * Übergreifende Farben, Schriften, Hilfsklassen
+ */
+body {
+    --color-primary-dark: #d91e18;
+    --color-secondary-dark: #707070;
+    --color-secondary-light: rgba(0,0,0, 0.05);
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+
+    /* https://pixabay.com/photos/glasses-reading-books-focus-4704055/ */
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: var(--color-primary-dark);
+    line-height: 1.2;
+}
+
+a, a:visited {
+    color: var(--color-secondary-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/**
+ * Kopfbereich
+ */
+header {
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0,0,0, 0.15);
+
+    .title {
+        color: black;
+        font-weight: bold;
+    }
+
+    .subtitle {
+        color: var(--color-primary-dark);
+    }
+
+    nav {
+        menu {
+            list-style: none;
+            padding: 0;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        li {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 54em) {
+    header nav menu {
+        flex-direction: row;
+    }
+}
+
+/**
+ * Hauptbereich
+ */
+main .buchcover {
+    width: 100%;
+    max-width: 15em;
+    box-shadow: 4px 4px 8px rgba(0,0,0, 0.5);
+
+    transition: transform 1s;
+
+    &:hover {
+        transform: rotate(2deg) scale(1.1);
+    }
+}
+
+@media (min-width: 70rem) {
+    main {
+        .container {
+            flex-direction: row-reverse;
+            gap: 1em;
+        }
+
+        section {
+            flex: 1;
+        }
+    }
+}
+
+/**
+ * Fußbereich
+ */
+footer {
+    font-size: 70%;
+    background-color: var(--color-secondary-light);
+    color: var(--color-secondary-dark);
+    padding: 1em;
+}
+
+.button {
+    display: inline-block;
+
+    border: none;
+    background-color: var(--color-primary-dark);
+    color: white;
+    padding: 0.5em;
+
+    border-radius: 1.5em;
+}

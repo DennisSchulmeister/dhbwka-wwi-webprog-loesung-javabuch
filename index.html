@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>Grundkurs Programmieren in Java</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/favicon.gif">
+        <link rel="stylesheet" href="style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="title">
+                    Grundkurs Programmieren
+                    <span class="subtitle">in Java</span>
+                </div>
+                <nav>
+                    <menu>
+                        <li>
+                            <a href="{% url '/index.html' %}">Das Buch</a>
+                        </li>
+                        <li>
+                            <a href="{% url '/anleitung.html' %}">Tools und Anleitungen</a>
+                        </li>
+                        <li>
+                            <a href="{% url '/autoren.html' %}">Die Autoren</a>
+                        </li>
+                    </menu>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <img src="img/buchcover.png" class="buchcover" />
+
+                <section>
+                    <h1>PROGRAMMIEREN LERNEN LEICHT GEMACHT</h1>
+                    <p>
+                        Über 100.000 begeisterte Leserinnen und Leser!
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Setzt wirklich keine Programmierkenntnisse voraus.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Führt erfolgreich von den ersten Schritten bis hin zur Entwicklung vernetzter Anwendungen.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Mit zahlreichen Übungsaufgaben und Beispielen.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Auf dieser Webseite: Tools und Anleitungen, Aktualisierungen und mehr.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="copyright">
+                    © Dietmar Ratz, Dennis Schulmeister-Zimolong, Detlef Seese, Jan Wiesenberger
+                </div>
+                <a href="mailto:autoren@grundkurs-java.de" class="button">E-Mail schreiben</a>
+            </div>
+        </footer>
+    </body>
+</html>

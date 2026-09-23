@@ -1,4 +1,4 @@
-# Webprogrammierung / Lösung / Hamburger-Menü (JavaScript)
+# Webprogrammierung / Lösung / Grundkurs Java
 
 Dies ist die **Musterlösung** zur Aufgabe „Grundkurs Java" aus der Vorlesung **Webprogrammierung** (Wirtschaftsinformatik, DHBW Karlsruhe), Kategorie *JavaScript*.
 
